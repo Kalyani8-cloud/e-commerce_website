@@ -33,32 +33,6 @@ It includes a user-friendly interface with product listing, cart, checkout, and 
 
 ---
 
-## Project Structure
-ecommerce-website/
-│── index.html
-│── login.php
-│── register.php
-│── products.html
-│── cart.php
-│── checkout.php
-│── thankyou.php
-│
-├── assets/
-│ ├── css/
-│ │ └── style.css
-│ ├── js/
-│ │ └── products.js
-│ └── uploads/ (product images)
-│
-├── api/
-│ ├── products.php
-│ └── add_to_cart.php
-│
-└── config/
-└── database.php
-
----
-
 ## Database Schema
 ### **Users Table**
 - `id` (INT, Primary Key)
