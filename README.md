@@ -59,23 +59,6 @@ ecommerce-website/
 
 ---
 
-## Screenshots
-### Home Page
-![Home Page](assets/uploads/screenshot-homepage.png)
-
-### Product Page
-![Product Page](assets/uploads/screenshot-products.png)
-
-### Cart Page
-![Cart Page](assets/uploads/screenshot-cart.png)
-
-### Checkout Page
-![Checkout Page](assets/uploads/screenshot-checkout.png)
-
-*(Replace with actual screenshots of your project)*
-
----
-
 ## Database Schema
 ### **Users Table**
 - `id` (INT, Primary Key)
