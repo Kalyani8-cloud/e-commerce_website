@@ -1,0 +1,242 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #f1c40f;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 80px);
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    color: white;
+    padding: 20px;
+}
+.hero-content {
+    max-width: 700px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero-content h1 span {
+    color: #f1c40f;
+}
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+.hero-content .btn {
+    display: inline-block;
+    background: #f1c40f;
+    color: #333;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.hero-content .btn:hover {
+    background: #d4ac0d;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Links default fix */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    color: #f1c40f;
+}
+
+/* Form Section */
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    padding: 20px;
+}
+.form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+.form-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background: #f1c40f;
+    border: none;
+    color: #333;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.form-container button:hover {
+    background: #d4ac0d;
+}
+.form-container p {
+    margin-top: 15px;
+}
+.form-container p a {
+    color: #3498db;
+    text-decoration: none;
+}
+.form-container p a:hover {
+    text-decoration: underline;
+}
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #e63946;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.add-to-cart:hover {
+    background: #555;
+}
+
+.cart-simple {
+    padding: 30px;
+}
+.cart-simple table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.cart-simple table th, 
+.cart-simple table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+.cart-simple table th {
+    background: #f4f4f4;
+}
+.cart-simple img {
+    display: block;
+    max-width: 100px;
+}
+.cart-simple h2 {
+    margin-top: 20px;
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
